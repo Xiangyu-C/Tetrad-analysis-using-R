@@ -1,0 +1,5 @@
+All_tetrad_data<-read.csv(file.choose(), stringsAsFactors=F)
+all_gene_names<-colnames(All_tetrad_data)
+Gene_pair<-()
+Gene1<-readline('Pick the first gene to analyze:%s', all_gene_names)
+Gene2<-readline('Pick the first gene to analyze:%s', all_gene_names)
