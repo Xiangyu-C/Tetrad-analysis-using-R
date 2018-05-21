@@ -1,4 +1,4 @@
-# Tetrad-analysis-using-R
+# Tetrad-analysis-using-R (app url: https://xiangyu.shinyapps.io/tetradgo/)
 Build a tetrad analysis app using R/Shiny as the back end language.
 The app was built to handle yeast tetrad data for chromosome segregation/crossover/gene conversion/interference analysis. The url for this app on shiny server is: xiangyu.shinyapps.io/tetradgo. Please feel free to visit that site for tetrad data analysis and you are welcome to download the code and run as a local app.
 The app is called 'tetradgo' and it's a fully functional app that can replace an old app using Excel/Macro. Also, since it's written in R, many things are calculated faster. The Shiny package gives the app an easy and modern look. Users should have no problem navigating the web app. There is an FAQ page as a reference in case there is a question regarding how to use the app. 
