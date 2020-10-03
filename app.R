@@ -594,7 +594,7 @@ server<-function(input, output, session) {
 	    interf_table<-Reduce(rbind, Map(rbind, Interv, Names, Ref_pd, Map_dis1, Ref_npd_tt, Map_dis2, Ratios))
 	    interf_table<-as.data.frame(interf_table)
 	    rownames(interf_table)<-NULL
-	    colnames(interf_table)<-NULL
+	    colnames(interf_table)<-c(1:(No_of_genes-1))
 	    return(interf_table)
 	  }
 
@@ -903,7 +903,8 @@ server<-function(input, output, session) {
 			return(NULL)
 		}
 		else {
-			read.csv(fileIn()$datapath, header=input$header, stringsAsFactors=F, sep=',')
+			# Added check.names=FALSE to ignore checking special characters in column names such as * or >
+			read.csv(fileIn()$datapath, check.names=FALSE, header=input$header, stringsAsFactors=F, sep=',')
 		}
 		})
 	
